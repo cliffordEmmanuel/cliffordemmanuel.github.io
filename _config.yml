@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: My Website # the website title (if blank, full name will be used instead)
+title: # the website title (if blank, full name will be used instead)
 first_name: Clifford
 middle_name: Emmanuel
 last_name: Akai-Nettey
@@ -91,8 +91,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: blog # blog_name will be displayed in your blog page
+blog_description: My curiosities displayed in writing
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -204,6 +204,10 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _news/
+  - _publications/
+  - _bibliography/
+  - _teaching/
 keep_files:
   - CNAME
   - .nojekyll
