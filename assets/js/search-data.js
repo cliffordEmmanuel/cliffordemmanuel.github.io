@@ -320,37 +320,37 @@ ninja.data = [{
           title: 'Heart Disease Prediction!',
           description: "This project uses machine learning to predict the likelihood of heart disease in patients based on various health metrics.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/1_heart_pred/";
             },},{id: "projects-comparative-analysis-mlr-vs-rfr",
           title: 'Comparative Analysis; MLR vs RFR',
           description: "Comparing Multiple Linear Regression (MLR) and Random Forest Regression (RFR) for house price prediction.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/projects/2_comp_mlr_rfr/";
             },},{id: "projects-comparative-analysis-svc-vs-random-forest",
           title: 'Comparative Analysis; SVC vs Random Forest',
           description: "Comparing SVC and Random Forest for heart disease prediction.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/projects/3_comp_svc_rf/";
             },},{id: "projects-cleanup-with-click",
           title: 'Cleanup with Click!',
           description: "Organises messy folders",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/projects/4_cleanup/";
             },},{id: "projects-stringify",
           title: 'Stringify!',
           description: "Converts a collection of objects into string versions.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/projects/5_stringify/";
             },},{id: "projects-web-scraping-api-less",
           title: 'Web Scraping API-less.',
           description: "Scraping an e-commerce site using requests and beautiful soup",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
+              window.location.href = "/projects/6_web_scraper/";
             },},{id: "projects-end-to-end-etl-pipeline",
           title: 'End to End ETL Pipeline',
           description: "Implementing an end to end ETL pipeline.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
+              window.location.href = "/projects/7_etl/";
             },},{
         id: 'social-cv',
         title: 'CV',
