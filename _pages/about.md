@@ -24,9 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-With a professional background in data engineering, I have worked extensively on architecting scalable data pipelines and cloud-native infrastructure for data-intensive applications. This experience exposed me to the complexities of distributed computation, fault tolerance, performance optimization, and—critically—the foundational role of data quality and system reliability in AI-driven systems.
+With a professional background in data engineering, I have worked extensively on architecting scalable data pipelines and cloud-native infrastructure for data-intensive applications. This experience exposed me to the complexities of distributed computation, fault tolerance, performance optimization, and the foundational role of data quality and system reliability in AI-driven systems.
 
-Driven by these challenges, I am transitioning into research to investigate the systemic and theoretical foundations that enable trustworthy AI. My interests lie at the intersection of large-scale data systems and responsible AI, particularly in designing robust, reliable, and transparent infrastructures that support dependable machine learning models in real-world environments.
+Driven by these challenges, I am transitioning into research to investigate the systemic and theoretical foundations that enable trustworthy AI. My interests lie at the intersection of large-scale data systems and responsible AI, and in designing robust, reliable, and transparent infrastructures that support dependable machine learning models in real-world environments.
 
 I aim to contribute to research that advances the development of AI systems that are not only scalable and high-performing, but also resilient, interpretable, and trustworthy by design.
 
