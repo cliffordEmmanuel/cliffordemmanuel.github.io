@@ -90,8 +90,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: My Thoughts # blog_name will be displayed in your blog page
-blog_description: I hope you find me
+blog_name: My Thoughts... # blog_name will be displayed in your blog page
+blog_description: I hope you find me curious
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
