@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data Research Engineer
+subtitle: Data Engineering | Trustworthy AI | XAI
 
 profile:
   align: right
