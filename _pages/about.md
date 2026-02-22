@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data Engineering | Trustworthy AI | XAI
+subtitle: Data Engineering | Trustworthy AI 
 
 profile:
   align: right

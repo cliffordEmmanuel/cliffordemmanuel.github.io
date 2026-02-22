@@ -2,7 +2,7 @@
 layout: post
 title: Understanding airflow's timing
 subtitle :  An explanation of the timing syntax.
-tags: [ariflow]
+tags: [airflow]
 author: Clifford
 comments : True
 ---

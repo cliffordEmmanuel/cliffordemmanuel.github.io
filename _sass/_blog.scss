@@ -15,20 +15,22 @@
 }
 
 .tag-category-list {
-  border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
   padding-top: 1rem;
 
   ul {
-    justify-content: center;
-    display: flow-root;
+    display: block;
 
-    p,
     li {
       list-style: none;
-      display: inline-block;
-      padding: 1rem 0.5rem;
+      display: inline;
+      padding: 0;
       color: var(--global-text-color-light);
+      line-height: 1.5;
+
+      &.divider {
+        display: block;
+        height: 1rem;
+      }
     }
   }
 }
@@ -149,6 +151,19 @@
     font-size: 0.875rem;
     margin-bottom: 0;
     padding-top: 0.5rem;
+  }
+}
+
+.blog-post-list {
+  @media (min-width: 576px) {
+    padding-right: 2rem;
+  }
+}
+
+.blog-sidebar {
+  @media (min-width: 576px) {
+    border-left: 1px solid var(--global-divider-color);
+    padding-left: 2rem;
   }
 }
 
