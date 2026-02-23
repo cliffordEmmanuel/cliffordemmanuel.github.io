@@ -2,7 +2,7 @@
 layout: post
 title: Intro to Apache Airflow
 subtitle :  Beginners guide
-tags: [ariflow, python]
+tags: [airflow, python]
 author: Clifford
 comments : True
 ---
@@ -15,7 +15,7 @@ Apache airflow is a platform for authoring, scheduling and monitoring workflows.
 All workflows are represented as **Directed Acyclic Graphs(DAGs)** which can be thought of as a collection of tasks.
 
 ![airflow-ui](/assets/img/project/airflow-ui.png)
-*Basic interface for ariflow this is useful for monitoring and testing dags*
+*Basic interface for airflow this is useful for monitoring and testing dags*
 
 <br>
 

@@ -31,7 +31,8 @@ pagination:
 {% if site.display_tags and site.display_tags.size > 0 %}
   {% assign blog_tags = site.display_tags %}
 {% elsif site.tags and site.tags.size > 0 %}
-  {% assign blog_tags = site.tags %}
+  {% capture tag_names %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|#|{% endunless %}{% endfor %}{% endcapture %}
+  {% assign blog_tags = tag_names | split: "|#|" %}
 {% endif %}
 
 <div class="row">
@@ -167,20 +168,15 @@ pagination:
     {% if blog_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
       <div class="tag-category-list">
         <ul class="p-0 m-0">
-          {% assign sorted_tags = blog_tags | sort %}
+          {% assign sorted_tags = blog_tags | sort_natural %}
           {% for tag in sorted_tags %}
             <li>
-              {% if tag.size == 2 %}
-                {% assign tag_name = tag[0] %}
-              {% else %}
-                {% assign tag_name = tag %}
-              {% endif %}
-              <a href="{{ tag_name | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag_name }}</a>{% unless forloop.last %}, {% endunless %}
+              <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
             </li>
           {% endfor %}
           {% if site.display_categories.size > 0 %}
             <li class="divider"></li>
-            {% assign sorted_categories = site.display_categories | sort %}
+            {% assign sorted_categories = site.display_categories | sort_natural %}
             {% for category in sorted_categories %}
               <li>
                 <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
