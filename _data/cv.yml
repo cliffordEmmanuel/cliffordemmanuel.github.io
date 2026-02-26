@@ -61,15 +61,15 @@ cv:
       - company: S4D Consulting
         position: Data Engineer Consultant
         location: Ghana
-        start_date: August 2024
-        end_date: October 2024
+        start_date: Aug 2024
+        end_date: Oct 2024
         highlights:
           - "Designed and maintained scalable data pipelines, integrating data from various sources, implementing ETL processes, optimizing data models, and ensuring data security using Azure Cloud to support seamless data exchange between Ghana's Ministry of Health (MOH) supply chain and Global Fund (GF) digital systems."
 
       - company: Bboxx Ltd
         position: Data Engineer
         location: Remote
-        start_date: September 2022
+        start_date: Sept 2022
         end_date: March 2023
         highlights:
           - "Supports business teams across 14 countries in maintaining and monitoring production data pipelines using AWS, Redshift, EC2, Airflow, DBT, and Docker for business reporting."
@@ -79,7 +79,7 @@ cv:
         position: Associate Data Engineer
         location: Ghana
         start_date: June 2021
-        end_date: August 2022
+        end_date: Aug 2022
         highlights:
           - "Managed and maintained the entire data generation platform, comprising several remote MYSQL DBs, AWS RDS, a custom Odoo ERP system, FTP servers, AWS S3, Amazon EC2 servers and Amazon Redshift."
           - "Supported business teams across 4 countries by translating business requirements into automated scripts using Airflow, Python and SQL."
@@ -87,7 +87,7 @@ cv:
       - company: GetInnotized GmbH
         position: Associate Data Scientist
         location: Ghana
-        start_date: August 2019
+        start_date: Aug 2019
         end_date: June 2021
         highlights:
           - "Drove an e-commerce app adoption rate from 19% to 50% within five months for a building and construction company, working with a multicultural team using Python, SQL, and Excel."
@@ -106,8 +106,8 @@ cv:
       - company: Blossom Academy
         position: Instructor
         location: Ghana
-        start_date: August 2020
-        end_date: September 2020
+        start_date: Aug 2020
+        end_date: Sept 2020
         highlights:
           - "Facilitated 3 python programming sessions that prepared 15+ students for a career in data science."
           - "Curated course materials for Python and Excel courses used in the training of 4 succesive student cohorts."
@@ -115,7 +115,7 @@ cv:
       - company: Azubi Africa
         position: Mentor and Support Trainer
         location: Ghana
-        start_date: August 2019
+        start_date: Aug 2019
         end_date: June 2021
         highlights:
           - "Assisted in the designing of a three-month intensive Data Science curriculum to train participants from beginner to entry-level competency."
