@@ -120,29 +120,21 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- RenderCV Sections - Merge Experience and Volunteer -->
-        {% comment %} First, combine Experience and Volunteer entries {% endcomment %}
-        {% assign empty_array = '' | split: ',' %}
-        {% assign exp = cv.sections.Experience | default: empty_array %}
-        {% assign vol = cv.sections.Volunteer | default: empty_array %}
-        {% assign combined_experience = exp | concat: vol %}
-        {% if combined_experience.size > 0 %}
-          <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
-            <div>
-              {% assign entries = combined_experience %}
-              {% include cv/experience.liquid %}
-            </div>
-          </div>
-        {% endif %}
+        <!-- RenderCV Sections - Dynamic Experience Handling -->
+        {% comment %} First, identify and combine all experience-related entries if needed, or just ensure they use the experience include {% endcomment %}
+        
+        {% comment %} 
+          In the previous version, Experience and Volunteer were combined into a single "Experience" section.
+          However, the user's data has distinct "Research Experience", "Work Experience", and "Volunteer/Leadership Experience".
+          I will update the loop below to handle these specifically.
+        {% endcomment %}
 
         {% comment %} Now render all other sections except Experience and Volunteer {% endcomment %}
         {% for section_pair in cv.sections %}
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}
 
-          {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
+          {% comment %} Skip legacy names if they were handled elsewhere, but now we'll handle them in the main loop {% endcomment %}
           {% if section_title == 'Experience' or section_title == 'Volunteer' %}
             {% continue %}
           {% endif %}
@@ -175,6 +167,9 @@ layout: default
               {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
                 {% assign entries = section_entries %}
                 {% include cv/projects.liquid %}
+              {% elsif section_title == 'Experience' or section_title == 'Work Experience' or section_title == 'Research Experience' or section_title == 'Volunteer' or section_title == 'Volunteer Experience' %}
+                {% assign entries = section_entries %}
+                {% include cv/experience.liquid %}
               {% elsif section_title == 'References' %}
                 {% assign entries = section_entries %}
                 {% include cv/references.liquid %}

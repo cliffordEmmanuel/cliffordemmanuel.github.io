@@ -1,189 +1,164 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Clifford Emmanuel Akai-Nettey
+  email: cliffemmanuels@gmail.com
+  phone: (233)54 944 6266
+  location: Accra - Ghana
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Data Engineer with strong experience in building data pipelines, MLOps, and backend systems.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: cliffordemmanuelakai-nettey
+    - network: GitHub
+      username: cliffordemmanuel
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University of Wolverhampton
+        location: Wolverhampton, UK
+        area: Computer Science
+        studyType: Masters
+        start_date: 2023
+        end_date: 2026
+
+      - institution: University of Mines and Technology
+        location: Tarkwa, Ghana
+        area: Computer Science and Engineering
+        studyType: BSc, First Class Honors
+        start_date: 2012
+        end_date: 2016
+
+    Research Experience:
+      - company: Department of Computer Science, University of Wolverhampton
+        position: Masters Research
+        location: Wolverhampton, UK
+        start_date: 2023
+        end_date: Present
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+          - "Comparative Analysis of Machine Learning Models – Evaluated performance and accuracy of regression and classification algorithms, producing a research report with experimental findings and recommendations for improving predictive models."
+          - "Applied data mining techniques on real-world datasets, producing a research report with preprocessing, model implementation, comparative evaluation, and recommendations for improving predictive outcomes."
+          - "Investigated vulnerabilities in home networking devices, evaluated existing security measures, and proposed improvements using emerging technologies and user education."
+      - company: Computer Science Department, University of Mines and Technology
+        position: Undergraduate Researcher
+        location: Tarkwa, Ghana
+        start_date: 2019
+        end_date: 2019
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Portfolio Optimization with Genetic Algorithms – Applied GA to optimize mutual fund selection in Ghana, comparing roulette wheel, tournament, and random pool methods, confirming efficiency and validity of GA in selection problems."
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+    Work Experience:
+      - company: BigSpark Ltd
+        position: Data Engineer Consultant
+        location: UK
+        start_date: 2023
+        end_date: Present
         highlights:
-          - Relativity
-          - Description 2.
+          - "Collaborated in the development of an AI Governance Platform for the UK market, working on the evaluation of the data quality of datasets used in the building of AI systems."
+          - "Leads the development and maintenance of optimized backend APIs and databases for an event management platform, enhancing scheduling, ticketing, and attendee data workflows."
+          - "Developed and maintained ETL pipelines for the reporting on NatWest’s retail and commercial customers for Smart Data Foundry."
+          - "Collaborated with a multidisciplinary team in the design and implementation of a metadata-based data engineering framework tailored to support the data engineering needs of a major UK bank using Apache Spark, SQL, Scala, and AWS services."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: S4D Consulting
+        position: Data Engineer Consultant
+        location: Ghana
+        start_date: August 2024
+        end_date: October 2024
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Designed and maintained scalable data pipelines, integrating data from various sources, implementing ETL processes, optimizing data models, and ensuring data security using Azure Cloud to support seamless data exchange between Ghana's Ministry of Health (MOH) supply chain and Global Fund (GF) digital systems."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Bboxx Ltd
+        position: Data Engineer
+        location: Remote
+        start_date: September 2022
+        end_date: March 2023
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Supports business teams across 14 countries in maintaining and monitoring production data pipelines using AWS, Redshift, EC2, Airflow, DBT, and Docker for business reporting."
+          - "Migrated business data reporting systems from using Google Workspace products to Microsoft equivalents."
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: PEG Africa
+        position: Associate Data Engineer
+        location: Ghana
+        start_date: June 2021
+        end_date: August 2022
+        highlights:
+          - "Managed and maintained the entire data generation platform, comprising several remote MYSQL DBs, AWS RDS, a custom Odoo ERP system, FTP servers, AWS S3, Amazon EC2 servers and Amazon Redshift."
+          - "Supported business teams across 4 countries by translating business requirements into automated scripts using Airflow, Python and SQL."
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: GetInnotized GmbH
+        position: Associate Data Scientist
+        location: Ghana
+        start_date: August 2019
+        end_date: June 2021
+        highlights:
+          - "Drove an e-commerce app adoption rate from 19% to 50% within five months for a building and construction company, working with a multicultural team using Python, SQL, and Excel."
+          - "Implemented Regression and Clustering models using Python and Scikit-Learn on Azure Databricks to perform benchmarking analysis for about 300 shops for an international telecom company."
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+    Volunteer Experience:
+      - company: Rails Girls Ghana
+        position: Mentor
+        location: Ghana
+        start_date: June 2021
+        end_date: March 2022
+        highlights:
+          - "Introduced a group of 4 ladies with no software development experience to programming."
+          - "Reinforced their interest in programming by guiding them to program their own blogs using ruby on rails."
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - company: Blossom Academy
+        position: Instructor
+        location: Ghana
+        start_date: August 2020
+        end_date: September 2020
+        highlights:
+          - "Facilitated 3 python programming sessions that prepared 15+ students for a career in data science."
+          - "Curated course materials for Python and Excel courses used in the training of 4 succesive student cohorts."
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - company: Azubi Africa
+        position: Mentor and Support Trainer
+        location: Ghana
+        start_date: August 2019
+        end_date: June 2021
+        highlights:
+          - "Assisted in the designing of a three-month intensive Data Science curriculum to train participants from beginner to entry-level competency."
+          - "Provided mentorship in problem-solving and career guidance for 20+ students through the training program."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming Languages
+        icon: fa-solid fa-code
+        keywords: "Python, Java, Scala, SQL"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Databases
+        icon: fa-solid fa-database
+        keywords: "SQL (PostgreSQL, MySQL), NoSQL (MongoDB, DocumentDB), Data warehouses (Redshift, Snowflake)"
 
-      - name: English
-        summary: "Fluent"
+      - name: Big Data
+        icon: fa-solid fa-layer-group
+        keywords: "Kafka, Spark, AWS EMR, Databricks"
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Cloud Technologies
+        icon: fa-solid fa-cloud
+        keywords: "AWS, Azure"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: DevOps
+        icon: fa-solid fa-server
+        keywords: "GitHub Actions, Terraform, Docker"
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - name: Agile Development
+        icon: fa-solid fa-users-gear
+        keywords: "Scrum, Jira, Confluence"
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+      - name: Version Control
+        icon: fa-solid fa-code-branch
+        keywords: "Git (GitHub, GitLab, Bitbucket)"
 
     References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Dr. Vincent Mwintieru Nofong
+        icon: fa-solid fa-envelope
+        reference: vnofong@umat.edu.gh
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Mrs. Evalyne Mwangi
+        icon: fa-solid fa-envelope
+        reference: evagmwangi@gmail.com
+
+      - name: Mrs. Ama Bembua Bainson
+        icon: fa-solid fa-envelope
+        reference: ama@cs.au.dk

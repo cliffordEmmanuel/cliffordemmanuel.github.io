@@ -42,14 +42,23 @@ a.btncv:hover {
  * CV TIME_TABLE styles
  *****************************/
 
+.date-column {
+  padding-left: 0.5rem !important;
+}
+
 p.location {
   font-size: 0.7rem;
-  white-space: nowrap;
+  white-space: normal;
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 i.iconlocation {
   color: var(--global-theme-color);
   font-size: 0.8rem;
+  width: 1rem;
+  text-align: center;
+  margin-right: 0.2rem;
 }
 
 i.iconinstitution {
