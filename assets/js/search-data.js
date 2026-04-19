@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-can-machine-learning-help-predict-heart-disease-a-data-science-exploration",
+        },{id: "post-unlocking-the-growing-black-box",
+        
+          title: "Unlocking the growing Black Box.",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/shap-lime/";
+          
+        },
+      },{id: "post-can-machine-learning-help-predict-heart-disease-a-data-science-exploration",
         
           title: "Can Machine Learning Help Predict Heart Disease? A Data Science Exploration",
         
@@ -351,6 +362,11 @@ ninja.data = [{
           description: "Implementing an end to end ETL pipeline.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_etl/";
+            },},{id: "projects-glass-box-loan-classifier",
+          title: 'Glass Box Loan Classifier',
+          description: "Explainable AI (XAI) dashboard for credit scoring models.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_loan_classifier/";
             },},{
         id: 'social-cv',
         title: 'CV',
