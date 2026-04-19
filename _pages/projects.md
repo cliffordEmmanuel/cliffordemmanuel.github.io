@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of my experimentations
+description: trying to get rid of my bad ideas so that i can have good ones
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: ["something more serious", "trying things for fun"]
 horizontal: false
 ---
 
