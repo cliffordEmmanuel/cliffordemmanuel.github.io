@@ -1,17 +1,18 @@
 ---
 layout: post
 title: Web Scrapping.
-subtitle :  Why I'm learning to love it.
+subtitle: Why I'm learning to love it.
 tags: [scraping, python]
 author: Clifford
-comments : True
+comments: True
 ---
 
 ![webscrape](/assets/img/project/webscrape.jpg)
 <br>
 
 At its core the process of scraping a particular website for data mimics how our browsers displays a particular webpage on our screen, except both are not so similar. When you type a url into your browser, typically the following steps occurs:
-- the browser searches the internet for the web page that belongs to the url you specified by placing a request 
+
+- the browser searches the internet for the web page that belongs to the url you specified by placing a request
 - a web server(just another computer located perhaps on another continent) responds to that request by and sends back the requested web page.
 - the browser then serves up the page to your screen with the formating intact.
 
@@ -26,11 +27,11 @@ Scraping is usually a component a bigger process and it helps to quickly gather 
 <br>
 
 Some scenarios where scraping can be applied are:
+
 - Scrape product details (price, images, rating, reviews etc.) from retailer/manufacturer/eCommerce websites (Ex: Amazon, eBay, AliExpress, Alibaba etc.) to show on own websites, to provide price comparisons, to perform a price watch on competing sellers etc.
 - Scrape people profiles from social networks like Facebook, LinkedIn etc. for tracking online reputation.
 - Scrape reviews of products and places/hotels/restaurants
 - Scrape data from various Government websites, most of which do not provide an easy way to download the data which they display.
-
 
 There are two ways of scraping and that heavily depends on whether the website/web application being scraped has an API or not.
 
@@ -38,7 +39,7 @@ There are two ways of scraping and that heavily depends on whether the website/w
 
 ### Scraping with an API
 
-Some web applications provide an API that enables one to easily access their data. Examples of such Twitter, Google search, LinkedIn etc. The advantage here is you’re provided with the methods you’ll need to access the data, and a lot of heavy lifting is done for you.  Other than that they may be some restrictions on how much info you can access and most have a payment structure.
+Some web applications provide an API that enables one to easily access their data. Examples of such Twitter, Google search, LinkedIn etc. The advantage here is you’re provided with the methods you’ll need to access the data, and a lot of heavy lifting is done for you. Other than that they may be some restrictions on how much info you can access and most have a payment structure.
 
 <br>
 
@@ -66,13 +67,12 @@ Here you create everything from scratch. You’ll write your own methods to fetc
 
 <br>
 
-I hope you're inspired. 
-Cover Photo by [Nicolas Picard](https://unsplash.com/@artnok?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+I hope you're inspired.
+Cover Photo by [Nicolas Picard](https://unsplash.com/@artnok?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 <br>
 
-
-<!-- 
+<!--
 <h2>1. HTML headings</h2>
 {% highlight html %}
 <h1>This is heading 1</h1>

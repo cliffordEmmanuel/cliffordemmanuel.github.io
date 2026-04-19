@@ -122,8 +122,8 @@ layout: default
 
         <!-- RenderCV Sections - Dynamic Experience Handling -->
         {% comment %} First, identify and combine all experience-related entries if needed, or just ensure they use the experience include {% endcomment %}
-        
-        {% comment %} 
+
+        {% comment %}
           In the previous version, Experience and Volunteer were combined into a single "Experience" section.
           However, the user's data has distinct "Research Experience", "Work Experience", and "Volunteer/Leadership Experience".
           I will update the loop below to handle these specifically.
@@ -167,7 +167,12 @@ layout: default
               {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
                 {% assign entries = section_entries %}
                 {% include cv/projects.liquid %}
-              {% elsif section_title == 'Experience' or section_title == 'Work Experience' or section_title == 'Research Experience' or section_title == 'Volunteer' or section_title == 'Volunteer Experience' %}
+              {% elsif section_title == 'Experience'
+                or section_title == 'Work Experience'
+                or section_title == 'Research Experience'
+                or section_title == 'Volunteer'
+                or section_title == 'Volunteer Experience'
+              %}
                 {% assign entries = section_entries %}
                 {% include cv/experience.liquid %}
               {% elsif section_title == 'References' %}

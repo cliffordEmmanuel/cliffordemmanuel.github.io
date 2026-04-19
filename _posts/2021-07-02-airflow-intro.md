@@ -1,75 +1,68 @@
 ---
 layout: post
 title: Intro to Apache Airflow
-subtitle :  Beginners guide
+subtitle: Beginners guide
 tags: [airflow, python]
 author: Clifford
-comments : True
+comments: True
 ---
 
-
-## Basic description 
-
+## Basic description
 
 Apache airflow is a platform for authoring, scheduling and monitoring workflows. It is useful in architecting and orchestrating data pipelines. You can think of it like an upgrade on cron jobs.
 All workflows are represented as **Directed Acyclic Graphs(DAGs)** which can be thought of as a collection of tasks.
 
 ![airflow-ui](/assets/img/project/airflow-ui.png)
-*Basic interface for airflow this is useful for monitoring and testing dags*
+_Basic interface for airflow this is useful for monitoring and testing dags_
 
 <br>
-
 
 ## Airflow DAGs concept:
 
-
 A created DAG would specify the dependecies between Tasks, and the order of their execution, and number retries that should happen. A task represents each node of a DAG and the actual work done each task represents is defined by operators. A task can be created for fetching data, running analysis, triggering other systems, or more.
 So basic characteristics of a DAG are:
- - Directed: each task must have at least one defined upstream or downstream task.
- - Acyclic: This means that no single task should point back to itself as we don't want to create infinite loops.
+
+- Directed: each task must have at least one defined upstream or downstream task.
+- Acyclic: This means that no single task should point back to itself as we don't want to create infinite loops.
 
 ![basic-dag](/assets/project/basic-dag.png)
-*An Image of a basic Dag*
+_An Image of a basic Dag_
 
 <br>
 
-
 ## Control Flow
 
-
-As the case with regular pipelines, Dags are designed such that they can be run multiple times. 
+As the case with regular pipelines, Dags are designed such that they can be run multiple times.
 They can also be parameterised. Since a Dag is usually a collection of several tasks, these tasks have dependencies declared on each other. You’ll see this in a DAG either using the **>>** and **<<** operators.
 
-
 ## Operators:
-They define what a particular task should do. There are 3 main operators:
- - Action operators: they execute a function eg PythonOperator or BashOperator
- - Transfer operators: move data between different sources
- - Sensor Operators: they wait for something to happen.
 
+They define what a particular task should do. There are 3 main operators:
+
+- Action operators: they execute a function eg PythonOperator or BashOperator
+- Transfer operators: move data between different sources
+- Sensor Operators: they wait for something to happen.
 
 ### Hierarchical view:
 
-
 DAG
- - Operator
-   - Task			
- - Operator
-   - Task
+
+- Operator
+  - Task
+- Operator
+  - Task
 
 ![dag-hierarchy](/assets/project/dag-hierarchy.png)
 
 <br>
 
-
 ## Basic python script
-
 
 All Dags are created using python code and below is an example of a basic script:
 
 ```python
 """
-Example DAG 
+Example DAG
 """
 from datetime import datetime
 
@@ -86,7 +79,7 @@ with DAG(
     ingest = DummyOperator(task_id="ingest")
     transform = DummyOperator(task_id="transform")
     load = DummyOperator(task_id="load")
-    
+
     ingest >> transform >> load
 
 if __name__ == "__main__":
@@ -94,8 +87,7 @@ if __name__ == "__main__":
 
 ```
 
+## _Sources_
 
-## *Sources*
 - <https://airflow.apache.org/docs/apache-airflow/stable/concepts/overview.html#>
 - <https://www.astronomer.io/guides/intro-to-airflow>
-

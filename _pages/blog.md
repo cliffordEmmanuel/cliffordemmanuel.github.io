@@ -22,6 +22,7 @@ pagination:
 {% assign blog_description_size = site.blog_description | size %}
 
 {% if blog_name_size > 0 or blog_description_size > 0 %}
+
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
@@ -29,10 +30,10 @@ pagination:
 {% endif %}
 
 {% if site.display_tags and site.display_tags.size > 0 %}
-  {% assign blog_tags = site.display_tags %}
+{% assign blog_tags = site.display_tags %}
 {% elsif site.tags and site.tags.size > 0 %}
-  {% capture tag_names %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|#|{% endunless %}{% endfor %}{% endcapture %}
-  {% assign blog_tags = tag_names | split: "|#|" %}
+{% capture tag_names %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|#|{% endunless %}{% endfor %}{% endcapture %}
+{% assign blog_tags = tag_names | split: "|#|" %}
 {% endif %}
 
 <div class="row">
@@ -162,6 +163,7 @@ pagination:
     {% if page.pagination.enabled %}
       {% include pagination.liquid %}
     {% endif %}
+
   </div>
 
   <div class="col-sm-3 blog-sidebar">

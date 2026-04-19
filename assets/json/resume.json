@@ -188,70 +188,37 @@
     {
       "name": "Programming Languages",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "Java",
-        "Scala",
-        "SQL"
-      ]
+      "keywords": ["Python", "Java", "Scala", "SQL"]
     },
     {
       "name": "Databases",
       "icon": "fa-solid fa-database",
-      "keywords": [
-        "PostgreSQL",
-        "MySQL",
-        "MongoDB",
-        "DocumentDB",
-        "Redshift",
-        "Snowflake"
-      ]
+      "keywords": ["PostgreSQL", "MySQL", "MongoDB", "DocumentDB", "Redshift", "Snowflake"]
     },
     {
       "name": "Big Data",
       "icon": "fa-solid fa-layer-group",
-      "keywords": [
-        "Kafka",
-        "Spark",
-        "AWS EMR",
-        "Databricks"
-      ]
+      "keywords": ["Kafka", "Spark", "AWS EMR", "Databricks"]
     },
     {
       "name": "Cloud Technologies",
       "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "AWS",
-        "Azure"
-      ]
+      "keywords": ["AWS", "Azure"]
     },
     {
       "name": "DevOps",
       "icon": "fa-solid fa-server",
-      "keywords": [
-        "GitHub Actions",
-        "Terraform",
-        "Docker"
-      ]
+      "keywords": ["GitHub Actions", "Terraform", "Docker"]
     },
     {
       "name": "Agile Development",
       "icon": "fa-solid fa-users-gear",
-      "keywords": [
-        "Scrum",
-        "Jira",
-        "Confluence"
-      ]
+      "keywords": ["Scrum", "Jira", "Confluence"]
     },
     {
       "name": "Version Control",
       "icon": "fa-solid fa-code-branch",
-      "keywords": [
-        "Git",
-        "GitHub",
-        "GitLab",
-        "Bitbucket"
-      ]
+      "keywords": ["Git", "GitHub", "GitLab", "Bitbucket"]
     }
   ],
   "languages": [
@@ -265,13 +232,7 @@
     {
       "name": "Research",
       "icon": "fa-solid fa-book",
-      "keywords": [
-        "Trustworthy AI",
-        "Explainable AI",
-        "Machine Learning",
-        "Graph Systems",
-        "Data security"
-      ]
+      "keywords": ["Trustworthy AI", "Explainable AI", "Machine Learning", "Graph Systems", "Data security"]
     }
   ],
   "references": [

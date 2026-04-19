@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Checking if a directory is empty using bash script
-subtitle :  
+subtitle:
 tags: [bash]
 author: Clifford
-comments : True
+comments: True
 ---
 
-
-Checking whether a directory is empty can be acheived using an if-else construct. 
+Checking whether a directory is empty can be acheived using an if-else construct.
 
 It has the following syntax:
 
@@ -22,7 +21,6 @@ fi # this closes the statement
 ```
 
 <br/>
-
 
 Condition for checking if empty:
 
@@ -43,7 +41,6 @@ fi
 ```
 
 <br/>
-
 
 ## Sources:
 

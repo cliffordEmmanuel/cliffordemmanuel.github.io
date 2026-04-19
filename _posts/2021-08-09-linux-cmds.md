@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Basic repetitive linux cmds
-subtitle :  
+subtitle:
 tags: [linux]
 author: Clifford
-comments : True
+comments: True
 ---
-
 
 Here I'll just log all the basic linux commands I've had to type several times.
 
