@@ -197,16 +197,3 @@ cv:
       - name: Databricks Certified Data Engineer Associate
         issuer: "Databricks — valid March 2025 to March 2027"
         icon: fa-solid fa-certificate
-
-    References:
-      - name: Dr. Vincent Mwintieru Nofong
-        icon: fa-solid fa-envelope
-        reference: vnofong@umat.edu.gh
-
-      - name: Mrs. Evalyne Mwangi
-        icon: fa-solid fa-envelope
-        reference: evagmwangi@gmail.com
-
-      - name: Mrs. Ama Bembua Bainson
-        icon: fa-solid fa-envelope
-        reference: ama@cs.au.dk
