@@ -1,93 +1,72 @@
 ---
 layout: post
-title: Intro to Apache Airflow
-subtitle: Beginners guide
-tags: [airflow, python]
+title: A Practical Introduction to Apache Airflow
+description: A practical introduction to representing, scheduling, and observing data workflows with Apache Airflow.
+tags: [airflow, data engineering, python]
 author: Clifford
-comments: True
+comments: true
+featured: true
 ---
 
-## Basic description
+Apache Airflow is a platform for defining, scheduling, and observing workflows.
+It represents a workflow as a directed acyclic graph (DAG): a set of tasks with
+declared dependencies. This is useful when work must run in a reliable order, be
+scheduled repeatedly, and remain observable when something fails.
 
-Apache airflow is a platform for authoring, scheduling and monitoring workflows. It is useful in architecting and orchestrating data pipelines. You can think of it like an upgrade on cron jobs.
-All workflows are represented as **Directed Acyclic Graphs(DAGs)** which can be thought of as a collection of tasks.
+Airflow is an orchestrator rather than the system that performs every piece of
+data processing itself. A task might fetch data, run a transformation job, wait
+for an external event, or trigger another system. Airflow coordinates those
+steps and records what happened along the way.
 
-![airflow-ui](/assets/img/project/airflow-ui.png)
-_Basic interface for airflow this is useful for monitoring and testing dags_
+## The core idea: a DAG
 
-<br>
+The DAG describes both the individual pieces of work and the relationships
+between them. Dependencies determine which tasks must complete before another
+task can begin; a DAG cannot contain a cycle that eventually points back to an
+earlier task.
 
-## Airflow DAGs concept:
+![Apache Airflow interface](/assets/img/project/airflow-ui.png)
 
-A created DAG would specify the dependecies between Tasks, and the order of their execution, and number retries that should happen. A task represents each node of a DAG and the actual work done each task represents is defined by operators. A task can be created for fetching data, running analysis, triggering other systems, or more.
-So basic characteristics of a DAG are:
+_The graph view makes a workflow easier to inspect: which tasks ran, where a
+failure occurred, and which tasks are waiting on an upstream dependency._
 
-- Directed: each task must have at least one defined upstream or downstream task.
-- Acyclic: This means that no single task should point back to itself as we don't want to create infinite loops.
+![A simple task dependency graph](/assets/img/project/basic-dag.png)
 
-![basic-dag](/assets/project/basic-dag.png)
-_An Image of a basic Dag_
+## Control flow
 
-<br>
+DAGs are designed to run repeatedly. A task can depend on one or more upstream
+tasks, and those dependencies make the expected order of execution explicit.
+Airflow users often express that relationship using the **>>** and **<<**
+operators.
 
-## Control Flow
+## Tasks, operators, and sensors
 
-As the case with regular pipelines, Dags are designed such that they can be run multiple times.
-They can also be parameterised. Since a Dag is usually a collection of several tasks, these tasks have dependencies declared on each other. You’ll see this in a DAG either using the **>>** and **<<** operators.
+Tasks are the units of work in a DAG. Operators and task decorators provide
+reusable ways to define what a task does, while sensors are designed to wait for
+an external condition or event. Keeping tasks narrow makes a workflow easier to
+reason about and operate.
 
-## Operators:
+![A simple DAG hierarchy](/assets/img/project/dag-hierarchy.png)
 
-They define what a particular task should do. There are 3 main operators:
+## When Airflow is useful
 
-- Action operators: they execute a function eg PythonOperator or BashOperator
-- Transfer operators: move data between different sources
-- Sensor Operators: they wait for something to happen.
+Airflow earns its place when a workflow has dependencies, retries, schedules, or
+operational visibility requirements. Examples include a daily ingestion and
+transformation sequence, a batch job that should wait for a source file, or a
+workflow that needs a clear record when a downstream step fails.
 
-### Hierarchical view:
+For a small, independent script, Airflow may be unnecessary. The value comes
+from making multi-step work explicit, repeatable, and observable.
 
-DAG
+## Practical principles
 
-- Operator
-  - Task
-- Operator
-  - Task
+- Keep tasks narrow and make retry behaviour intentional.
+- Treat the DAG as orchestration code, not as the place to pass large datasets
+  between tasks.
+- Make task dependencies clear enough that an operator can understand the
+  impact of a failure.
+- Start with the workflow and operational need, then choose the simplest
+  deployment that supports it.
 
-![dag-hierarchy](/assets/project/dag-hierarchy.png)
-
-<br>
-
-## Basic python script
-
-All Dags are created using python code and below is an example of a basic script:
-
-```python
-"""
-Example DAG
-"""
-from datetime import datetime
-
-from airflow import DAG
-from airflow.operators.dummy import DummyOperator
-from airflow.utils.edgemodifier import Label
-
-with DAG(
-    "example_branch_labels"
-    , schedule_interval="@daily"
-    , start_date=datetime(2021, 1, 1)
-    , catchup=False
-) as dag:
-    ingest = DummyOperator(task_id="ingest")
-    transform = DummyOperator(task_id="transform")
-    load = DummyOperator(task_id="load")
-
-    ingest >> transform >> load
-
-if __name__ == "__main__":
-    dag.cli()
-
-```
-
-## _Sources_
-
-- <https://airflow.apache.org/docs/apache-airflow/stable/concepts/overview.html#>
-- <https://www.astronomer.io/guides/intro-to-airflow>
+For current terminology and deployment guidance, see the
+[Apache Airflow architecture overview](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html).

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Stringify!
-description: Converts a collection of objects into string versions.
+title: Stringify
+description: A compact utility experiment for converting collections of objects into string representations.
 img: assets/img/project/strings.jpeg
 importance: 1
-category: "trying things for fun"
+category: "Experiments"
 redirect: https://github.com/cliffordEmmanuel/stringify
 ---

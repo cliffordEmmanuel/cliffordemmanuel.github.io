@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Predicting House Prices; MLR vs RFR
-subtitle: I set out to explore whether machine learning could help us predict house prices more accurately.
-tags: [ml, regression]
+title: "House-Price Prediction: Linear Regression vs Random Forest"
+date: 2025-01-07
+description: A public-dataset comparison of linear and random-forest regression for house-price prediction.
+tags: [machine learning, regression, experimentation]
 author: Clifford
-comments: True
+comments: true
 ---
 
 # Predicting House Prices: MLR vs RFR

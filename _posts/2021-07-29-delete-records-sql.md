@@ -5,6 +5,7 @@ subtitle:
 tags: [PostgreSQL]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 Syntax:

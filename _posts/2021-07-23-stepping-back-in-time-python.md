@@ -5,6 +5,7 @@ subtitle:
 tags: [pandas, python]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 I found that working with dates in python can be quite a hurdle. But pandas always comes through. I discovered the `pd.offsets` module and it has been a smooth ride looking to go back and forward in time.

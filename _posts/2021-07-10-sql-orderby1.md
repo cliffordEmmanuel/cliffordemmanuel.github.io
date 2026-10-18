@@ -5,6 +5,7 @@ subtitle: What does it mean?
 tags: [PostgreSQL, sql]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 When i first saw `Order by 1` at the tail end of an sql script. I was terribly confused.

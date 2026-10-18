@@ -5,6 +5,7 @@ subtitle:
 tags: [PostgreSQL]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 The **Grant** statement is used to define access privileges. That is, it can be used to grant access to database objects such us tables, views , sequence etc..

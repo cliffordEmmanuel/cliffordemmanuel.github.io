@@ -5,6 +5,7 @@ subtitle:
 tags: [PostgreSQL, redshift]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 There are several approaches to this.

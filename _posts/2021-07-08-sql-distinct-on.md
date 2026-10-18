@@ -5,6 +5,7 @@ subtitle: when to use it
 tags: [PostgreSQL, redshift, sql]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 The `DISTINCT` keyword used in a select statment is used to remove duplicates from a query result. It keeps one row from each group of duplicates.

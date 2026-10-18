@@ -1,19 +1,10 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Writing
+description: Practical notes on data engineering, AI systems, and trustworthy AI.
 nav: true
 nav_order: 1
-pagination:
-  enabled: true
-  collection: posts
-  permalink: /page/:num/
-  per_page: 5
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 1 # The number of links before the current page
-    after: 3 # The number of links after the current page
 ---
 
 <div class="post">
@@ -37,9 +28,10 @@ pagination:
 {% endif %}
 
 <div class="row">
-  <div class="col-sm-9 blog-post-list">
-    {% assign featured_posts = site.posts | where: "featured", "true" %}
+  <div class="col-sm-12 blog-post-list">
+    {% assign featured_posts = site.posts | where: "featured", true %}
     {% if featured_posts.size > 0 %}
+      <h2>Featured Writing</h2>
       <div class="container featured-posts">
         {% assign is_even = featured_posts.size | modulo: 2 %}
         <div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
@@ -77,17 +69,14 @@ pagination:
           {% endfor %}
         </div>
       </div>
-      <hr>
+      <h2>Selected Notes</h2>
     {% endif %}
 
     <ul class="post-list">
-      {% if page.pagination.enabled %}
-        {% assign postlist = paginator.posts %}
-      {% else %}
-        {% assign postlist = site.posts %}
-      {% endif %}
+      {% assign postlist = site.posts %}
 
       {% for post in postlist %}
+        {% if post.featured != true and post.portfolio_archive != true and post.external_source == blank %}
         {% if post.external_source == blank %}
           {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
         {% else %}
@@ -157,14 +146,15 @@ pagination:
             </div>
           {% endif %}
         </li>
+        {% endif %}
       {% endfor %}
     </ul>
 
-    {% if page.pagination.enabled %}
-      {% include pagination.liquid %}
-    {% endif %}
+    <p><a href="{{ '/notes/' | relative_url }}">Browse archive notes</a></p>
 
   </div>
+
+{% assign blog_tags = "" %}
 
   <div class="col-sm-3 blog-sidebar">
     {% if blog_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}

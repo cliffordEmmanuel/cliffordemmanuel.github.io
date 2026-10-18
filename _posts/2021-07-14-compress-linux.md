@@ -5,6 +5,7 @@ subtitle: Using zip, tar and gunzip
 tags: [linux]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 There are several commands provided by linux to unzip a compressed file.

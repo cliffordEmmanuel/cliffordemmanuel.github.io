@@ -5,6 +5,7 @@ subtitle:
 tags: [redshift]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 When joining strings in redshift we can use these options:

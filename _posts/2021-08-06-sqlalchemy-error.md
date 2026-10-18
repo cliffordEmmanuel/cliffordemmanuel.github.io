@@ -5,6 +5,7 @@ subtitle:
 tags: [PostgreSQL, redshift]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 I ran into an issue one time where a query which worked fine on dbeaver through a weird error when a python script that ran it failed on the remote server.

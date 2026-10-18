@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Cleanup with Click!
-description: Organises messy folders
+title: Cleanup with Click
+description: A small command-line experiment for organising messy folders.
 img: assets/img/project/cleanup.jpeg
 importance: 1
-category: "trying things for fun"
+category: "Experiments"
 redirect: https://github.com/cliffordEmmanuel/cleanup-click
 ---

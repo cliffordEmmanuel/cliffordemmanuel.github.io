@@ -5,6 +5,7 @@ subtitle:
 tags: [bash]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 Checking whether a directory is empty can be acheived using an if-else construct.

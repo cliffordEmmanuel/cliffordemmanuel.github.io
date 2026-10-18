@@ -5,6 +5,7 @@ subtitle:
 tags: [conda, virtual envrionments]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 ## The following are the handy commands I found for managing conda virtual environments.

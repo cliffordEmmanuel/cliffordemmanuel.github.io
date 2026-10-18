@@ -5,6 +5,7 @@ subtitle: Using SCP
 tags: [linux, scp]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 **SCP - secure copy**. It is used to copy files between servers securely. The transfer can happen either between a local host and a remote host or between two remote hosts. SCP uses the same authentication and security procedure that is used by the SSH protocol.

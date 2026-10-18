@@ -1,10 +1,10 @@
 ---
 layout: page
-title: End to End ETL Pipeline
-description: Implementing an end to end ETL pipeline.
+title: End-to-End ETL Pipeline
+description: A public learning project that demonstrates the fundamentals of an end-to-end data pipeline.
 img: assets/img/project/etl.png
-importance: 2
-category: "something more serious"
+importance: 1
+category: "Experiments"
 related_publications: true
 redirect: https://github.com/cliffordEmmanuel/Exploring_Data_Engineering/tree/master/basic_end_to_end_etl
 ---

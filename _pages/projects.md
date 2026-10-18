@@ -1,15 +1,13 @@
 ---
 layout: page
-title: projects
+title: Selected Work
 permalink: /projects/
-description: trying to get rid of my bad ideas so that i can have good ones
+description: Selected professional delivery, independent research, and practical data and AI experiments.
 nav: true
 nav_order: 3
-display_categories: ["something more serious", "trying things for fun"]
-horizontal: false
+display_categories: ["Professional Case Study", "Independent Research", "Experiments"]
 ---
 
-<!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -20,7 +18,13 @@ horizontal: false
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
-  {% if page.horizontal %}
+  {% if category == "Experiments" %}
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    {% for project in sorted_projects %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+  {% else %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}

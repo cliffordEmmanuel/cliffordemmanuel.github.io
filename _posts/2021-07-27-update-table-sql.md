@@ -5,6 +5,7 @@ subtitle:
 tags: [PostgreSQL]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 Updating an existing table value based on a certain condition.

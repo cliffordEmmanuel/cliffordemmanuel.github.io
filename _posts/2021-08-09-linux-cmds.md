@@ -5,6 +5,7 @@ subtitle:
 tags: [linux]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 Here I'll just log all the basic linux commands I've had to type several times.

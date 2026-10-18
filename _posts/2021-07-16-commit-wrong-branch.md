@@ -5,6 +5,7 @@ subtitle:
 tags: [linux]
 author: Clifford
 comments: True
+portfolio_archive: true
 ---
 
 So, I've run into this many issues several times, when I mistakenly make commits on the master branch rather than to another branch. Jeez sometimes this is hell!!
