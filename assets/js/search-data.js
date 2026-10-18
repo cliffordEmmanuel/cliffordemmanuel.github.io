@@ -4,70 +4,70 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
+  },{id: "nav-writing",
+          title: "Writing",
+          description: "Practical notes on data engineering, AI systems, and trustworthy AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "trying to get rid of my bad ideas so that i can have good ones",
+        },{id: "nav-selected-work",
+          title: "Selected Work",
+          description: "Selected professional delivery, independent research, and practical data and AI experiments.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "",
+          description: "Professional experience, education, certifications, and technical skills of Clifford Emmanuel Akai-Nettey.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-unlocking-the-growing-black-box",
+        },{id: "post-what-shap-and-lime-explain-and-what-they-do-not",
         
-          title: "Unlocking the growing Black Box.",
+          title: "What SHAP and LIME Explain—and What They Do Not",
         
-        description: "",
+        description: "A plain-language guide to what two common explanation methods reveal—and the limits of their claims.",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2026/shap-lime/";
           
         },
-      },{id: "post-can-machine-learning-help-predict-heart-disease-a-data-science-exploration",
+      },{id: "post-heart-disease-classification-with-public-data-an-experiment",
         
-          title: "Can Machine Learning Help Predict Heart Disease? A Data Science Exploration",
+          title: "Heart-Disease Classification with Public Data: An Experiment",
         
-        description: "",
+        description: "A public-dataset learning exercise and a reflection on why unusually strong validation results require scrutiny.",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2025/heart-disease-pred/";
           
         },
-      },{id: "post-predicting-house-prices-mlr-vs-rfr",
+      },{id: "post-house-price-prediction-linear-regression-vs-random-forest",
         
-          title: "Predicting House Prices; MLR vs RFR",
+          title: "House-Price Prediction: Linear Regression vs Random Forest",
         
-        description: "",
+        description: "A public-dataset comparison of linear and random-forest regression for house-price prediction.",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2025/regression-comparative-analysis/";
           
         },
-      },{id: "post-predicting-house-prices-svc-vs-random-forest",
+      },{id: "post-heart-disease-classification-svc-vs-random-forest",
         
-          title: "Predicting House Prices; SVC vs Random Forest",
+          title: "Heart-Disease Classification: SVC vs Random Forest",
         
-        description: "",
+        description: "A public-dataset comparison of support-vector and random-forest classifiers; not a clinical model.",
         section: "Posts",
         handler: () => {
           
@@ -294,11 +294,11 @@ ninja.data = [{
             window.location.href = "/blog/2021/airflow-timing/";
           
         },
-      },{id: "post-intro-to-apache-airflow",
+      },{id: "post-a-practical-introduction-to-apache-airflow",
         
-          title: "Intro to Apache Airflow",
+          title: "A Practical Introduction to Apache Airflow",
         
-        description: "",
+        description: "A practical introduction to representing, scheduling, and observing data workflows with Apache Airflow.",
         section: "Posts",
         handler: () => {
           
@@ -327,44 +327,54 @@ ninja.data = [{
             window.location.href = "/blog/2019/ga/";
           
         },
-      },{id: "projects-heart-disease-prediction",
-          title: 'Heart Disease Prediction!',
-          description: "This project uses machine learning to predict the likelihood of heart disease in patients based on various health metrics.",
+      },{id: "projects-rwanda-data-genai-amp-devops-delivery",
+          title: 'Rwanda: Data, GenAI &amp;amp; DevOps Delivery',
+          description: "Ongoing work across data engineering, generative AI, and deployment operations for a pharmaceutical-intelligence initiative.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01-rwanda-data-ai-delivery/";
+            },},{id: "projects-can-ai-explanations-be-manipulated",
+          title: 'Can AI Explanations Be Manipulated?',
+          description: "MSc research on whether explainable-AI methods remain reliable under adversarial manipulation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/05-xai-tamper-resistance/";
+            },},{id: "projects-heart-disease-prediction",
+          title: 'Heart Disease Prediction',
+          description: "A machine-learning learning project exploring heart-disease prediction from health metrics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_heart_pred/";
-            },},{id: "projects-comparative-analysis-mlr-vs-rfr",
-          title: 'Comparative Analysis; MLR vs RFR',
-          description: "Comparing Multiple Linear Regression (MLR) and Random Forest Regression (RFR) for house price prediction.",
+            },},{id: "projects-house-price-model-comparison",
+          title: 'House-Price Model Comparison',
+          description: "A comparison of multiple linear regression and random-forest regression for house-price prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_comp_mlr_rfr/";
-            },},{id: "projects-comparative-analysis-svc-vs-random-forest",
-          title: 'Comparative Analysis; SVC vs Random Forest',
-          description: "Comparing SVC and Random Forest for heart disease prediction.",
+            },},{id: "projects-classification-model-comparison",
+          title: 'Classification Model Comparison',
+          description: "A comparison of support-vector and random-forest classifiers for heart-disease prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_comp_svc_rf/";
             },},{id: "projects-cleanup-with-click",
-          title: 'Cleanup with Click!',
-          description: "Organises messy folders",
+          title: 'Cleanup with Click',
+          description: "A small command-line experiment for organising messy folders.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_cleanup/";
             },},{id: "projects-stringify",
-          title: 'Stringify!',
-          description: "Converts a collection of objects into string versions.",
+          title: 'Stringify',
+          description: "A compact utility experiment for converting collections of objects into string representations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_stringify/";
-            },},{id: "projects-web-scraping-api-less",
-          title: 'Web Scraping API-less.',
-          description: "Scraping an e-commerce site using requests and beautiful soup",
+            },},{id: "projects-api-free-web-scraping",
+          title: 'API-Free Web Scraping',
+          description: "A learning project using Requests and Beautiful Soup to explore e-commerce web scraping.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_web_scraper/";
             },},{id: "projects-end-to-end-etl-pipeline",
-          title: 'End to End ETL Pipeline',
-          description: "Implementing an end to end ETL pipeline.",
+          title: 'End-to-End ETL Pipeline',
+          description: "A public learning project that demonstrates the fundamentals of an end-to-end data pipeline.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_etl/";
             },},{id: "projects-glass-box-loan-classifier",
           title: 'Glass Box Loan Classifier',
-          description: "Explainable AI (XAI) dashboard for credit scoring models.",
+          description: "A public explainable-AI dashboard for exploring credit-scoring model decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_loan_classifier/";
             },},{
