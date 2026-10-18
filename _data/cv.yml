@@ -17,14 +17,16 @@ cv:
       - institution: University of Wolverhampton
         location: Wolverhampton, UK
         area: Computer Science
-        studyType: Masters
+        studyType: MSc
         start_date: 2023
-        end_date: 2026
+        end_date: "Expected Nov 2026"
+        highlights:
+          - "Dissertation graded and formally accepted; formal degree award expected November 2026."
 
       - institution: University of Mines and Technology
         location: Tarkwa, Ghana
         area: Computer Science and Engineering
-        studyType: BSc, First Class Honors
+        studyType: BSc, First Class Honours
         start_date: 2012
         end_date: 2016
 
@@ -47,16 +49,26 @@ cv:
           - "Portfolio Optimization with Genetic Algorithms – Applied GA to optimize mutual fund selection in Ghana, comparing roulette wheel, tournament, and random pool methods, confirming efficiency and validity of GA in selection problems."
 
     Work Experience:
+      - company: S4D Consulting
+        position: Data & AI Engineering Consultant
+        location: Rwanda and Zambia
+        start_date: Apr 2026
+        end_date: Present
+        highlights:
+          - "Lead data engineering, generative AI, and DevOps workstreams for pharmaceutical intelligence initiatives in Rwanda and Zambia, coordinating small engineering teams and collaborating with institutional stakeholders."
+          - "For the Rwanda initiative, lead technical delivery across data engineering, generative AI, and deployment operations for analytical applications."
+          - "The Zambia workstream is in progress and focuses on data engineering and DevOps for predictive stock-intelligence capabilities."
+
       - company: BigSpark Ltd
         position: Data Engineer Consultant
         location: UK
         start_date: 2023
         end_date: Present
         highlights:
-          - "Collaborated in the development of an AI Governance Platform for the UK market, working on the evaluation of the data quality of datasets used in the building of AI systems."
-          - "Leads the development and maintenance of optimized backend APIs and databases for an event management platform, enhancing scheduling, ticketing, and attendee data workflows."
-          - "Developed and maintained ETL pipelines for the reporting on NatWest’s retail and commercial customers for Smart Data Foundry."
-          - "Collaborated with a multidisciplinary team in the design and implementation of a metadata-based data engineering framework tailored to support the data engineering needs of a major UK bank using Apache Spark, SQL, Scala, and AWS services."
+          - "Develop and maintain production Apache Spark, Scala, SQL, and AWS pipelines processing NatWest retail and commercial banking data through Smart Data Foundry, supporting downstream analytics and reporting."
+          - "Contributed to LLM evaluation for a NatWest use case, assessing output quality and application safeguards."
+          - "Built dataset-quality assessment and scoring components during a three-month AI-governance engagement; contribution was scoped to evaluation functionality rather than the full platform."
+          - "Deployed an internal AWS Bedrock-based agent for workflow automation and contributed to experimental data-quality frameworks."
 
       - company: S4D Consulting
         position: Data Engineer Consultant
@@ -64,7 +76,9 @@ cv:
         start_date: Aug 2024
         end_date: Oct 2024
         highlights:
-          - "Designed and maintained scalable data pipelines, integrating data from various sources, implementing ETL processes, optimizing data models, and ensuring data security using Azure Cloud to support seamless data exchange between Ghana's Ministry of Health (MOH) supply chain and Global Fund (GF) digital systems."
+          - "Implemented and supported Azure-based data-integration pipelines for the Global Fund/ADEx initiative, enabling exchange between Ghana Ministry of Health supply-chain systems and Global Fund digital platforms."
+          - "Developed ingestion and transformation workflows with Azure Databricks, PySpark, Spark SQL, Azure Data Factory, Unity Catalog, and medallion architecture."
+          - "Supported data quality, monitoring, troubleshooting, and delivery requirements."
 
       - company: Bboxx Ltd
         position: Data Engineer
@@ -72,8 +86,8 @@ cv:
         start_date: Sept 2022
         end_date: March 2023
         highlights:
-          - "Supports business teams across 14 countries in maintaining and monitoring production data pipelines using AWS, Redshift, EC2, Airflow, DBT, and Docker for business reporting."
-          - "Migrated business data reporting systems from using Google Workspace products to Microsoft equivalents."
+          - "Owned development, maintenance, and operational support for production data pipelines serving business operations across 14 countries."
+          - "Used AWS, Redshift, Airflow, dbt, Python, and Docker; monitored execution, validated data, investigated failures, and supported reporting users."
 
       - company: PEG Africa
         position: Associate Data Engineer
@@ -81,8 +95,8 @@ cv:
         start_date: June 2021
         end_date: Aug 2022
         highlights:
-          - "Managed and maintained the entire data generation platform, comprising several remote MYSQL DBs, AWS RDS, a custom Odoo ERP system, FTP servers, AWS S3, Amazon EC2 servers and Amazon Redshift."
-          - "Supported business teams across 4 countries by translating business requirements into automated scripts using Airflow, Python and SQL."
+          - "Maintained data pipelines and integrations across remote MySQL databases, AWS RDS, Odoo ERP, FTP services, Amazon S3, EC2, and Redshift."
+          - "Built Airflow-orchestrated Python and SQL workflows, supporting automated reporting, data validation, incident resolution, and business teams across four countries."
 
       - company: GetInnotized GmbH
         position: Associate Data Scientist
@@ -90,8 +104,8 @@ cv:
         start_date: Aug 2019
         end_date: June 2021
         highlights:
-          - "Drove an e-commerce app adoption rate from 19% to 50% within five months for a building and construction company, working with a multicultural team using Python, SQL, and Excel."
-          - "Implemented Regression and Clustering models using Python and Scikit-Learn on Azure Databricks to perform benchmarking analysis for about 300 shops for an international telecom company."
+          - "Contributed to an e-commerce analytics initiative associated with an increase in application adoption from 19% to 50% within five months."
+          - "Developed regression and clustering models using Python, scikit-learn, and Azure Databricks to benchmark approximately 300 retail outlets for a telecommunications client."
 
     Volunteer Experience:
       - company: Rails Girls Ghana
@@ -122,33 +136,67 @@ cv:
           - "Provided mentorship in problem-solving and career guidance for 20+ students through the training program."
 
     Skills:
-      - name: Programming Languages
+      - name: Data Processing & Languages
         icon: fa-solid fa-code
-        keywords: "Python, Java, Scala, SQL"
+        keywords:
+          - Python
+          - SQL
+          - Scala
+          - Apache Spark
+          - PySpark
+          - Spark SQL
 
-      - name: Databases
-        icon: fa-solid fa-database
-        keywords: "SQL (PostgreSQL, MySQL), NoSQL (MongoDB, DocumentDB), Data warehouses (Redshift, Snowflake)"
-
-      - name: Big Data
-        icon: fa-solid fa-layer-group
-        keywords: "Kafka, Spark, AWS EMR, Databricks"
-
-      - name: Cloud Technologies
+      - name: Cloud Data Platforms
         icon: fa-solid fa-cloud
-        keywords: "AWS, Azure"
+        keywords:
+          - AWS
+          - Microsoft Azure
+          - Azure Databricks
+          - Amazon Redshift
+          - PostgreSQL
+          - MySQL
+          - Amazon S3
 
-      - name: DevOps
-        icon: fa-solid fa-server
-        keywords: "GitHub Actions, Terraform, Docker"
+      - name: Data Engineering
+        icon: fa-solid fa-layer-group
+        keywords:
+          - ETL/ELT
+          - Data Integration
+          - Data Modelling
+          - Apache Airflow
+          - Azure Data Factory
+          - dbt
+          - Medallion Architecture
 
-      - name: Agile Development
-        icon: fa-solid fa-users-gear
-        keywords: "Scrum, Jira, Confluence"
+      - name: Data Quality & Governance
+        icon: fa-solid fa-shield-halved
+        keywords:
+          - Great Expectations
+          - Deequ
+          - Data Validation
+          - Dataset-Quality Scoring
+          - Unity Catalog
 
-      - name: Version Control
-        icon: fa-solid fa-code-branch
-        keywords: "Git (GitHub, GitLab, Bitbucket)"
+      - name: AI Engineering
+        icon: fa-solid fa-brain
+        keywords:
+          - Generative-AI Integration
+          - LLM Evaluation
+          - AWS Bedrock
+
+      - name: Delivery & Operations
+        icon: fa-solid fa-gears
+        keywords:
+          - Docker
+          - GitHub Actions
+          - CI/CD
+          - Production Monitoring
+          - Incident Resolution
+
+    Certificates:
+      - name: Databricks Certified Data Engineer Associate
+        issuer: "Databricks — valid March 2025 to March 2027"
+        icon: fa-solid fa-certificate
 
     References:
       - name: Dr. Vincent Mwintieru Nofong

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data Engineering | Trustworthy AI
+subtitle: Data & AI Engineer | Cloud Data Platforms, AI Engineering & Trustworthy AI
 
 profile:
   align: right
@@ -24,10 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I spent my early career in data engineering, specializing in scalable pipelines and cloud infrastructure for data-intensive applications.
+I am a Data & AI Engineer with more than seven years of experience designing, developing, and operating enterprise data platforms and AI-enabled applications.
 
-Working at the edge of distributed computation and performance optimization taught me that the reliability of an AI system is only as strong as its underlying data foundation.
+My work spans production data engineering, cloud infrastructure, data quality, and generative AI across financial services, public-sector healthcare, renewable energy, and telecommunications.
 
-Driven by a desire to make these systems more resilient, I am now focused on researching the systemic pillars of trustworthy AI.
+I currently lead data engineering, generative AI, and DevOps workstreams for public-sector pharmaceutical intelligence initiatives. In parallel, my MSc research explores whether explainable-AI methods remain reliable under adversarial manipulation through reproducible benchmarking.
 
-I aim to bridge the gap between large-scale data engineering and responsible AI to build infrastructures that are robust by design.
+I am particularly interested in building systems that are dependable, explainable, and secure.
