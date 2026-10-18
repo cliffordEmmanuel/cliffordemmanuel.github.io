@@ -48,28 +48,28 @@ deployment, what is experimental, and what is still in progress. No client
 data, system diagrams, source code, performance figures, or implementation
 details should be published without permission.
 
-| Area | Publicly safe positioning |
-| --- | --- |
-| S4D Consulting, April 2026–present | Lead data engineering, AI, and DevOps workstreams for pharmaceutical intelligence initiatives. Rwanda work covers GenAI/data/DevOps; Zambia work remains in progress. Say what was delivered only where confirmed. |
-| BigSpark Ltd, March 2023–present | Build and maintain production Spark, Scala, SQL, and AWS pipelines for NatWest data through Smart Data Foundry. Describe the LLM evaluation, three-month data-quality/governance scoring engagement, internal Bedrock agent, and experimental data-quality tooling with correct scope. |
-| S4D Consulting, August–October 2024 | Separate engagement for Global Fund/ADEx integration: Azure Databricks, PySpark, Spark SQL, Unity Catalog, Azure Data Factory, and medallion architecture. |
-| Bboxx and PEG Africa | Operational ownership of production data pipelines supporting business operations across 14 countries at Bboxx and four at PEG Africa. Emphasise monitoring, validation, incidents, reporting, and user support. |
-| GetInnotized GmbH | Analytics and data-science experience, including retail-outlet benchmarking and e-commerce adoption work. |
-| Education | MSc Computer Science dissertation graded and formally accepted; formal award expected November 2026. Do not present it as awarded yet. BSc Computer Science and Engineering, First Class Honours. |
-| Certification | Databricks Certified Data Engineer Associate, March 2025–March 2027. |
-| Research | Reproducible benchmark on explanation tamper resistance / adversarial robustness in XAI. Findings are unpublished; say so, and do not imply peer review or publication. |
+| Area                                | Publicly safe positioning                                                                                                                                                                                                                                                              |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S4D Consulting, April 2026–present  | Lead data engineering, AI, and DevOps workstreams for pharmaceutical intelligence initiatives. Rwanda work covers GenAI/data/DevOps; Zambia work remains in progress. Say what was delivered only where confirmed.                                                                     |
+| BigSpark Ltd, March 2023–present    | Build and maintain production Spark, Scala, SQL, and AWS pipelines for NatWest data through Smart Data Foundry. Describe the LLM evaluation, three-month data-quality/governance scoring engagement, internal Bedrock agent, and experimental data-quality tooling with correct scope. |
+| S4D Consulting, August–October 2024 | Separate engagement for Global Fund/ADEx integration: Azure Databricks, PySpark, Spark SQL, Unity Catalog, Azure Data Factory, and medallion architecture.                                                                                                                             |
+| Bboxx and PEG Africa                | Operational ownership of production data pipelines supporting business operations across 14 countries at Bboxx and four at PEG Africa. Emphasise monitoring, validation, incidents, reporting, and user support.                                                                       |
+| GetInnotized GmbH                   | Analytics and data-science experience, including retail-outlet benchmarking and e-commerce adoption work.                                                                                                                                                                              |
+| Education                           | MSc Computer Science dissertation graded and formally accepted; formal award expected November 2026. Do not present it as awarded yet. BSc Computer Science and Engineering, First Class Honours.                                                                                      |
+| Certification                       | Databricks Certified Data Engineer Associate, March 2025–March 2027.                                                                                                                                                                                                                   |
+| Research                            | Reproducible benchmark on explanation tamper resistance / adversarial robustness in XAI. Findings are unpublished; say so, and do not imply peer review or publication.                                                                                                                |
 
 ## Information architecture
 
 The existing structure can be refined rather than rebuilt:
 
-| Visitor need | Existing location | Refresh approach |
-| --- | --- | --- |
-| Immediate professional identity | Homepage (`_pages/about.md`) | Rewrite headline and introduction; retain existing visual layout. |
-| Career history, skills, education, certifications | CV (`_data/cv.yml`, `_pages/cv.md`) | Replace outdated descriptions with an accurate, scannable record. |
-| Evidence of technical approach | Projects (`_projects/`, `_pages/projects.md`) | Prioritise selected case studies over a repository-style list. |
-| Research depth | New research/case-study content in Phase 2 | Give the MSc/XAI work a dedicated public page or detailed project entry. |
-| Ongoing thinking | Blog (`_posts/`) | Publish only material that is useful and safe to share. |
+| Visitor need                                      | Existing location                             | Refresh approach                                                         |
+| ------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------ |
+| Immediate professional identity                   | Homepage (`_pages/about.md`)                  | Rewrite headline and introduction; retain existing visual layout.        |
+| Career history, skills, education, certifications | CV (`_data/cv.yml`, `_pages/cv.md`)           | Replace outdated descriptions with an accurate, scannable record.        |
+| Evidence of technical approach                    | Projects (`_projects/`, `_pages/projects.md`) | Prioritise selected case studies over a repository-style list.           |
+| Research depth                                    | New research/case-study content in Phase 2    | Give the MSc/XAI work a dedicated public page or detailed project entry. |
+| Ongoing thinking                                  | Blog (`_posts/`)                              | Publish only material that is useful and safe to share.                  |
 
 No theme overhaul, framework migration, or broad styling work is planned in the
 first phase.
