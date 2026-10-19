@@ -7,4 +7,5 @@ importance: 2
 category: "Experiments"
 related_publications: true
 redirect: https://github.com/cliffordEmmanuel/glass-box-loan-classifier
+tag: Explainable AI
 ---

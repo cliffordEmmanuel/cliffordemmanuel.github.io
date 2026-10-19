@@ -6,4 +6,5 @@ img: assets/img/project/house_price_pred.jpeg
 importance: 2
 category: "Experiments"
 redirect: https://github.com/cliffordEmmanuel/house-prices-prediction
+tag: Regression
 ---

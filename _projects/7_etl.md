@@ -7,4 +7,5 @@ importance: 1
 category: "Experiments"
 related_publications: true
 redirect: https://github.com/cliffordEmmanuel/Exploring_Data_Engineering/tree/master/basic_end_to_end_etl
+tag: Data engineering
 ---

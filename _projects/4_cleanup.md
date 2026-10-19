@@ -6,4 +6,5 @@ img: assets/img/project/cleanup.jpeg
 importance: 1
 category: "Experiments"
 redirect: https://github.com/cliffordEmmanuel/cleanup-click
+tag: CLI tool
 ---

@@ -3,21 +3,27 @@ layout: about
 title: About
 permalink: /
 description: Data & AI Engineer building dependable cloud data platforms, AI systems, and trustworthy AI.
-subtitle: Data & AI Engineer | Cloud Data Platforms, AI Engineering & Trustworthy AI
+
+# Intro block
+eyebrow: Data & AI Engineer
+headline: I build dependable data platforms and AI systems you can explain.
+actions:
+  - label: View selected work
+    url: /projects/
+  - label: View CV
+    url: /cv/
 
 profile:
-  align: right
   image: profile-pic.jpeg
-  image_circular: true # crops the image to make it circular
-  more_info: >
 
-# selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-# announcements:
-#   enabled: true # includes a list of news items
-#   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-#   limit: 5 # leave blank to include all the news in the `_news` folder
+# Summary row under the intro
+facts:
+  - value: 7+ years
+    label: Data & AI engineering
+  - value: 4 sectors
+    label: Finance, health, energy, telecom
+  - value: MSc research
+    label: Robustness of explainable AI
 
 latest_posts:
   enabled: false
@@ -25,10 +31,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Data & AI Engineer with more than seven years of experience designing, developing, and operating enterprise data platforms and AI-enabled applications.
+For more than seven years I have designed and operated enterprise data platforms and AI-enabled applications across financial services, public-sector healthcare, renewable energy, and telecommunications.
 
-My work spans production data engineering, cloud infrastructure, data quality, and generative AI across financial services, public-sector healthcare, renewable energy, and telecommunications.
-
-I currently lead data engineering, generative AI, and DevOps workstreams for public-sector pharmaceutical intelligence initiatives. In parallel, my MSc research explores whether explainable-AI methods remain reliable under adversarial manipulation through reproducible benchmarking.
-
-I am particularly interested in building systems that are dependable, explainable, and secure.
+Today I lead data engineering, generative AI, and DevOps workstreams for public-sector pharmaceutical intelligence. My MSc research asks whether explainable-AI methods hold up under adversarial manipulation.

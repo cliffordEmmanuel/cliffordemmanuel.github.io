@@ -1,14 +1,30 @@
 {% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
-  {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-  {% endif %}
+  <div class="footer-row">
+    <span class="footer-copy">
+      &copy; {{ site.time | date: '%Y' }}
+      {{ site.first_name }}
+      {{ site.middle_name }}
+      {{ site.last_name }}
+      {{- site.footer_text }}
+      {% if site.impressum_path %}
+        · <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>
+      {% endif %}
+      {% if site.last_updated %}
+        · Last updated {{ 'now' | date: '%B %d, %Y' }}
+      {% endif %}
+    </span>
+    <span class="footer-links">
+      {% if site.data.socials.email %}
+        <a href="mailto:{{ site.data.socials.email | encode_email }}">Email</a>
+      {% endif %}
+      {% if site.data.socials.linkedin_username %}
+        <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" rel="external nofollow noopener" target="_blank">LinkedIn</a>
+      {% endif %}
+      {% if site.data.socials.github_username %}
+        <a href="https://github.com/{{ site.data.socials.github_username }}" rel="external nofollow noopener" target="_blank">GitHub</a>
+      {% endif %}
+    </span>
+  </div>
 {% endcapture %}
 
 {% if site.footer_fixed %}
@@ -18,7 +34,7 @@
     </div>
   </footer>
 {% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
+  <footer class="sticky-bottom" role="contentinfo">
     {% if site.newsletter.enabled %}
       {% include newsletter.liquid %}
     {% endif %}

@@ -4,6 +4,10 @@ title: "Rwanda: Data, GenAI & DevOps Delivery"
 description: Ongoing work across data engineering, generative AI, and deployment operations for a pharmaceutical-intelligence initiative.
 importance: 1
 category: "Professional Case Study"
+featured: true
+featured_order: 1
+kicker: "Case study · 2026–present"
+cta: Read case study
 ---
 
 > **Ongoing engagement · 2026–present**  

@@ -4,66 +4,34 @@ title: Selected Work
 permalink: /projects/
 description: Selected professional delivery, independent research, and practical data and AI experiments.
 nav: true
-nav_order: 3
-display_categories: ["Professional Case Study", "Independent Research", "Experiments"]
+nav_order: 1
 ---
 
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if category == "Experiments" %}
-  <div class="row row-cols-1 row-cols-md-3 g-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% else %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-4 g-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
+{% assign featured_projects = site.projects | where: "featured", true | sort: "featured_order" %}
+
+<div class="feature-grid">
+  {% for project in featured_projects %}
+    {% include project_feature_card.liquid project=project %}
   {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-4 g-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>
+
+{% assign experiments = site.projects | where: "category", "Experiments" | sort: "importance" %}
+{% if experiments.size > 0 %}
+
+<h2 class="section-title">Experiments</h2>
+<ul class="work-list">
+  {% for project in experiments %}
+    <li>
+      <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+        <span class="work-main">
+          <span class="work-title">{{ project.title }}</span>
+          <span class="work-desc">{{ project.description }}</span>
+        </span>
+        {% if project.tag %}
+          <span class="work-tag">{{ project.tag }}</span>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
