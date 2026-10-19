@@ -36,9 +36,9 @@ cv:
         start_date: 2023
         end_date: Present
         highlights:
-          - "Comparative Analysis of Machine Learning Models – Evaluated performance and accuracy of regression and classification algorithms, producing a research report with experimental findings and recommendations for improving predictive models."
-          - "Applied data mining techniques on real-world datasets, producing a research report with preprocessing, model implementation, comparative evaluation, and recommendations for improving predictive outcomes."
-          - "Investigated vulnerabilities in home networking devices, evaluated existing security measures, and proposed improvements using emerging technologies and user education."
+          - "Designed a reproducible benchmark to assess whether explainability methods remain reliable under adversarial manipulation."
+          - "Focused on controlled comparison, repeatable experiments, and transparent evaluation criteria for explanation robustness."
+          - "Dissertation graded and formally accepted; findings and supporting materials are unpublished."
       - company: Computer Science Department, University of Mines and Technology
         position: Undergraduate Researcher
         location: Tarkwa, Ghana

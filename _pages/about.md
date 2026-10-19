@@ -33,4 +33,4 @@ latest_posts:
 
 For more than seven years I have designed and operated enterprise data platforms and AI-enabled applications across financial services, public-sector healthcare, renewable energy, and telecommunications.
 
-Today I lead data engineering, generative AI, and DevOps workstreams for public-sector pharmaceutical intelligence. My MSc research asks whether explainable-AI methods hold up under adversarial manipulation.
+Today I lead data engineering, generative AI, and DevOps workstreams for public-sector health-supply planning. My MSc research asks whether explainable-AI methods hold up under adversarial manipulation.

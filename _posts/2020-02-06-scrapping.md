@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web Scrapping.
+title: Web Scraping.
 subtitle: Why I'm learning to love it.
 tags: [scraping, python]
 author: Clifford
