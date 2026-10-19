@@ -1,0 +1,9 @@
+{% assign p = include.project %}
+<a class="feature-card" href="{% if p.redirect %}{{ p.redirect }}{% else %}{{ p.url | relative_url }}{% endif %}">
+  {% if p.kicker %}
+    <span class="feature-kicker">{{ p.kicker }}</span>
+  {% endif %}
+  <h3 class="feature-title">{{ p.title }}</h3>
+  <p class="feature-text">{{ p.description }}</p>
+  <span class="feature-cta">{{ p.cta | default: 'Read more' }} &rarr;</span>
+</a>

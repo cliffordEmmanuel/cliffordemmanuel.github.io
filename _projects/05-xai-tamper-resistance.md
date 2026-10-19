@@ -4,6 +4,10 @@ title: Can AI Explanations Be Manipulated?
 description: MSc research on whether explainable-AI methods remain reliable under adversarial manipulation.
 importance: 1
 category: "Independent Research"
+featured: true
+featured_order: 2
+kicker: "Research · MSc"
+cta: Read summary
 ---
 
 > **MSc research · Findings and supporting materials are unpublished**
