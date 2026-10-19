@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-writing",
-          title: "Writing",
-          description: "Practical notes on data engineering, AI systems, and trustworthy AI.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-selected-work",
+  },{id: "nav-selected-work",
           title: "Selected Work",
           description: "Selected professional delivery, independent research, and practical data and AI experiments.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
+          },
+        },{id: "nav-writing",
+          title: "Writing",
+          description: "Practical notes on data engineering, AI systems, and trustworthy AI.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
           },
         },{id: "nav-cv",
           title: "CV",
@@ -30,7 +30,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-what-shap-and-lime-explain-and-what-they-do-not",
+        },{id: "post-grounded-by-design-building-a-self-hosted-assistant-for-health-supply-planning",
+        
+          title: "Grounded by Design: Building a Self-Hosted Assistant for Health-Supply Planning",
+        
+        description: "How a narrow, traceable conversational assistant can help planners explore model outputs without inventing figures or making decisions for them.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/grounded-by-design/";
+          
+        },
+      },{id: "post-the-foundation-before-the-forecast-building-a-governed-data-platform-for-supply-planning",
+        
+          title: "The Foundation Before the Forecast: Building a Governed Data Platform for Supply Planning...",
+        
+        description: "How a shared, traceable data foundation brings forecasting and procurement intelligence into one dependable planning platform.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/foundation-before-the-forecast/";
+          
+        },
+      },{id: "post-what-shap-and-lime-explain-and-what-they-do-not",
         
           title: "What SHAP and LIME Explain—and What They Do Not",
         
@@ -305,9 +327,9 @@ ninja.data = [{
             window.location.href = "/blog/2021/airflow-intro/";
           
         },
-      },{id: "post-web-scrapping",
+      },{id: "post-web-scraping",
         
-          title: "Web Scrapping.",
+          title: "Web Scraping.",
         
         description: "",
         section: "Posts",
@@ -329,7 +351,7 @@ ninja.data = [{
         },
       },{id: "projects-rwanda-data-genai-amp-devops-delivery",
           title: 'Rwanda: Data, GenAI &amp;amp; DevOps Delivery',
-          description: "Ongoing work across data engineering, generative AI, and deployment operations for a pharmaceutical-intelligence initiative.",
+          description: "Designing and building a governed data platform, a self-hosted grounded assistant, and the infrastructure beneath both, for a national public-health supply chain.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01-rwanda-data-ai-delivery/";
             },},{id: "projects-can-ai-explanations-be-manipulated",
@@ -339,7 +361,7 @@ ninja.data = [{
               window.location.href = "/projects/05-xai-tamper-resistance/";
             },},{id: "projects-heart-disease-prediction",
           title: 'Heart Disease Prediction',
-          description: "A machine-learning learning project exploring heart-disease prediction from health metrics.",
+          description: "A machine-learning project exploring heart-disease prediction from health metrics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_heart_pred/";
             },},{id: "projects-house-price-model-comparison",
@@ -390,6 +412,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/cliffordemmanuelakai-nettey", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/cliffordEmmanuel", "_blank");
         },
       },{
       id: 'light-theme',
