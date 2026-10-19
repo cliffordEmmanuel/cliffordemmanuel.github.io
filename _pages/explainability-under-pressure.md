@@ -26,6 +26,7 @@ quick tests below.
       </div>
       <ol class="xai-reasons" data-reasons aria-label="Reasons for the alert"></ol>
     </div>
+
   </section>
 
   <section class="xai-panel" aria-labelledby="xai-q1-title">
@@ -130,9 +131,11 @@ quick tests below.
       <ul class="xai-changes" data-changes></ul>
     </details>
     <p class="xai-research"><strong>In my research:</strong> a targeted attack pushed the top reason out of the top ten in about one in five network flows on one dataset, with the alert unchanged. On the other dataset, the same attack barely worked.</p>
+
   </section>
 
-  <noscript><p>This lab needs JavaScript to run.</p></noscript>
+<noscript><p>This lab needs JavaScript to run.</p></noscript>
+
 </section>
 
 ## What the three tests show

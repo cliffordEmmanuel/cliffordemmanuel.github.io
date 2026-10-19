@@ -141,15 +141,17 @@
     target.querySelector("[data-top]").textContent = FEATURES[top].label;
     target.classList.toggle("is-moved", moved);
     const order = FEATURES.map((_, i) => i).sort((a, b) => phi[b] - phi[a]);
-    target.querySelector("[data-reasons]").innerHTML = order.map((i) => {
-      const feature = FEATURES[i];
-      return `
+    target.querySelector("[data-reasons]").innerHTML = order
+      .map((i) => {
+        const feature = FEATURES[i];
+        return `
         <li class="${i === top ? "is-top" : ""}">
           <span class="xai-reason-label">${feature.label}</span>
           <span class="xai-reason-track" aria-hidden="true"><span style="width: ${largest > 0 ? (Math.max(phi[i], 0) / largest) * 100 : 0}%"></span></span>
           <span class="xai-reason-value">${Math.round(share(phi[i]) * 100)}%</span>
         </li>`;
-    }).join("");
+      })
+      .join("");
     return { p, top };
   };
 
@@ -163,10 +165,7 @@
 
   const renderTiles = (target, outcomes) => {
     target.innerHTML = outcomes
-      .map(
-        (o, i) =>
-          `<li class="${o.className}" title="${o.title}"><span class="xai-sr">${i + 1}: ${o.title}</span></li>`
-      )
+      .map((o, i) => `<li class="${o.className}" title="${o.title}"><span class="xai-sr">${i + 1}: ${o.title}</span></li>`)
       .join("");
   };
 
@@ -230,11 +229,8 @@
     $("[data-nudge-answer]").textContent =
       `The reason held ${count("same")} times. It flipped ${different} ${different === 1 ? "time" : "times"} while the alert stayed the same.`;
     const flips = outcomes.filter((o) => o.kind === "different");
-    const flippedTo = [...new Set(flips.map((o) => o.top))].map(
-      (i) => `${lower(i)} (${flips.filter((o) => o.top === i).length})`
-    );
-    const alertNote =
-      count("alert") > 0 ? ` In ${count("alert")} more, the change was big enough to move the alert level itself.` : "";
+    const flippedTo = [...new Set(flips.map((o) => o.top))].map((i) => `${lower(i)} (${flips.filter((o) => o.top === i).length})`);
+    const alertNote = count("alert") > 0 ? ` In ${count("alert")} more, the change was big enough to move the alert level itself.` : "";
     $("[data-nudge-detail]").textContent = flips.length
       ? `When it flipped, the top reason became ${flippedTo.join(" and ")}.${alertNote}`
       : `The top reason stayed ${lower(original.top)} every time the alert level held.${alertNote}`;
@@ -308,7 +304,8 @@
       detail.textContent = "Press the button to let the attacker search, or try it yourself below.";
     } else if (!sameAlert) {
       answer.textContent = `The alert dropped to ${level(result.p).toLowerCase()}.`;
-      detail.textContent = "That breaks the rule of this game. Here the alert must stay the same, and only the reason may change. Try another combination.";
+      detail.textContent =
+        "That breaks the rule of this game. Here the alert must stay the same, and only the reason may change. Try another combination.";
     } else if (result.top !== original.top) {
       answer.textContent = `Still ${level(result.p).toLowerCase()}. Same data leaving. But the top reason now says “${FEATURES[result.top].label}”.`;
       detail.textContent = `The analyst would now investigate ${lower(result.top)} and could miss the data theft. Only small changes were needed, and the stolen data did not change at all.`;
@@ -333,7 +330,8 @@
       });
     }
     renderAttack();
-    $("[data-attack-search]").textContent = `The attacker tried all ${total} possible combinations of small changes. ${hits.length} of them work. Random changes rarely find one; a deliberate search always does.`;
+    $("[data-attack-search]").textContent =
+      `The attacker tried all ${total} possible combinations of small changes. ${hits.length} of them work. Random changes rarely find one; a deliberate search always does.`;
   });
 
   $("[data-reset-attack]").addEventListener("click", () => {
