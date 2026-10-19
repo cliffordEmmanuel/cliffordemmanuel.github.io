@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-grounded-by-design-building-a-self-hosted-assistant-for-health-supply-planning",
+        },{id: "post-when-the-explanation-is-the-target-building-a-reproducible-xai-robustness-benchmark",
+        
+          title: "When the Explanation Is the Target: Building a Reproducible XAI Robustness Benchmark",
+        
+        description: "How I designed a reproducible benchmark to test whether AI explanations remain dependable when an attacker can influence them, and what it showed.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/when-explanation-is-the-target/";
+          
+        },
+      },{id: "post-grounded-by-design-building-a-self-hosted-assistant-for-health-supply-planning",
         
           title: "Grounded by Design: Building a Self-Hosted Assistant for Health-Supply Planning",
         
@@ -354,9 +365,9 @@ ninja.data = [{
           description: "Designing and building a governed data platform, a self-hosted grounded assistant, and the infrastructure beneath both, for a national public-health supply chain.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01-rwanda-data-ai-delivery/";
-            },},{id: "projects-can-ai-explanations-be-manipulated",
-          title: 'Can AI Explanations Be Manipulated?',
-          description: "MSc research on whether explainable-AI methods remain reliable under adversarial manipulation.",
+            },},{id: "projects-can-an-attacker-rewrite-an-ai-explanation",
+          title: 'Can an Attacker Rewrite an AI Explanation?',
+          description: "MSc research. A reproducible benchmark that tests whether SHAP and LIME explanations in ML intrusion detection stay reliable under attack.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/05-xai-tamper-resistance/";
             },},{id: "projects-heart-disease-prediction",
