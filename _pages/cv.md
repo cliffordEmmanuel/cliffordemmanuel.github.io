@@ -6,6 +6,7 @@ description: Professional experience, education, certifications, and technical s
 nav: true
 nav_order: 5
 cv_format: rendercv
+hide_contact: true # contact details are already in the navbar and footer
 toc:
   sidebar: left
 ---
