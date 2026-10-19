@@ -360,7 +360,12 @@ ninja.data = [{
             window.location.href = "/blog/2019/ga/";
           
         },
-      },{id: "projects-rwanda-data-genai-amp-devops-delivery",
+      },{id: "projects-explainability-under-pressure",
+          title: 'Explainability Under Pressure',
+          description: "An interactive toy model that runs three tests on one alert explanation, matching the three properties measured in my MSc research.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/00-explainability-under-pressure/";
+            },},{id: "projects-rwanda-data-genai-amp-devops-delivery",
           title: 'Rwanda: Data, GenAI &amp;amp; DevOps Delivery',
           description: "Designing and building a governed data platform, a self-hosted grounded assistant, and the infrastructure beneath both, for a national public-health supply chain.",
           section: "Projects",handler: () => {
